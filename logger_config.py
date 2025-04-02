@@ -19,12 +19,14 @@ def get_logger():
         file_handler = TimedRotatingFileHandler(
             "logs/server.log", when="midnight", interval=1, backupCount=7, encoding="utf-8"
         )
+        # Уровень сообщений лога
         file_handler.setLevel(logging.DEBUG)
         file_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
         file_handler.setFormatter(file_formatter)
 
         # Обработчик для вывода в консоль
         console_handler = logging.StreamHandler()
+        # Уровень сообщений консоли
         console_handler.setLevel(logging.INFO)
         console_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
         console_handler.setFormatter(console_formatter)

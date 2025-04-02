@@ -20,6 +20,7 @@ async def main():
     server = QueryServer(SERVER_IP, QUERY_PORT, LOG_FILES)
     await server.main()
 
+
 if __name__ == "__main__":
     try:
         asyncio.run(main())

@@ -3,7 +3,7 @@ from collections import defaultdict
 import subprocess
 import time
 from logger_config import get_logger
-
+from constants import IP_PATTERN, DDOS_INTERVAL, DDOS_THRESHOLD
 # Инициализация логгера
 logger = get_logger()
 
