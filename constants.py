@@ -23,6 +23,5 @@ DDOS_INTERVAL = 5    # Интервал проверки (в секундах)
 
 UNIFIED_LOGIN_PATTERN = re.compile(
     r"(?:PostLogin Account:\s*(\d+))|"
-    r"(?:Join succeeded:\s*([^\s]+))|"
     r"(?:ASGGameModeLobby::LobbyClientLogin NickName = ([^,]+), UniqueId = (\d+))"
 )
